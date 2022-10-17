@@ -3,7 +3,7 @@ package dLSorter;
 public class Main {
 	public static void main(String[] args) {
 		ConfigManager configManager = new ConfigManager();
-//
+		
 		Sorter sorter = new Sorter(configManager.readDownloadDir());
 
 		if (configManager.readDownloadDir().isEmpty())
@@ -11,7 +11,5 @@ public class Main {
 		else {
 			sorter.scanSort();
 		}
-		
-//		Gui.start(configManager);
 	}
 }
